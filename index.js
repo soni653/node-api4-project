@@ -7,7 +7,7 @@ const deleterRouter = require("./Delete/delete-router");
 const putRouter = require("./Put/put-router");
 const morgan = require("morgan");
 const server = express();
-const port = 9090;
+const port = process.env.PORT || 9090;
 
 server.use(express.json());
 server.use(helmet());
